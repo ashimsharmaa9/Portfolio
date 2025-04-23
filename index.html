@@ -44,11 +44,12 @@
     </a>
 
     <div class="social-links text-center">
-      <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
-      <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
-      <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
-      <a href="#" class="google-plus"><i class="bi bi-skype"></i></a>
-      <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.facebook.com/ashim.sharma.739" class="facebook" target="_blank"><i class="bi bi-facebook"></i></a>
+        <a href="https://www.youtube.com/@ashimsharmaa" class="youtube" target="_blank"><i class="bi bi-youtube"></i></a>
+        <a href="https://www.linkedin.com/in/ashim-sharma/" class="linkedin" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a href="https://www.researchgate.net/profile/Ashim-Sharma-3?ev=hdr_xprf" class="researchgate" target="_blank"><i class="bi bi-mortarboard-fill"></i></a>
+      </div>
+      
     </div>
 
     <nav id="navmenu" class="navmenu">
@@ -57,7 +58,7 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
-        <li><a href="#services"><i class="bi bi-hdd-stack navicon"></i> Highlights</a></li>
+        <li><a href="#testimonials"><i class="bi bi-hdd-stack navicon"></i> Highlights</a></li>
        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">Dropdown 1</a></li>
@@ -471,11 +472,11 @@
               "breakpoints": {
                 "320": {
                   "slidesPerView": 1,
-                  "spaceBetween": 40
+                  "spaceBetween": 15
                 },
                 "1200": {
-                  "slidesPerView": 3,
-                  "spaceBetween": 1
+                  "slidesPerView": 2,
+                  "spaceBetween": 5
                 }
               }
             }
@@ -486,7 +487,7 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p><strong>Evaluating research projects of students at Rajhena Technical College</strong></p>
-                <img src="assets/img/testimonials/testimonials-1.jpeg" class="testimonial-img" alt="Research Evaluation">
+                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="Research Evaluation" style="width: 100%; height: auto; border-radius: 7px; ">
               </div>
             </div>
     
@@ -494,18 +495,25 @@
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p><strong>Field surveying using total station in hilly terrain of Rolpa</strong></p>
-                <img src="assets/img/testimonials/testimonials-2.jpeg" class="testimonial-img" alt="Field Survey Work">
+                <img src="assets/img/testimonials/testimonials-2.jpeg" class="testimonial-img" alt="Field Survey Work" style="width: 100%; height: auto; border-radius: 7px; ">
               </div>
             </div>
     
             <!-- Slide 3 -->
             <div class="swiper-slide">
               <div class="testimonial-item">
-                <p><strong>Participated in training on Development of National Land Cover Monitoring System for Afghanistan during ICIMOD intern.</strong></p>
-                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="ICIMOD Training">
+                <p><strong>Training on Development of NLCMS of Aghanistan during ICIMOD intern.</strong></p>
+                <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="ICIMOD Training" style="width: 100%; height: auto; border-radius: 7px; ">
               </div>
             </div>
-    
+            
+            <!-- Slide 4 -->
+            <div class="swiper-slide">
+              <div class="testimonial-item">
+                <p><strong>Drone Disaster Monitoring under  District Administration Office, Dang</strong></p>
+                <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="DRR Drone" style="width: 100%; height: auto; border-radius: 7px; ">
+              </div>
+            </div>
           </div>
     
           <div class="swiper-pagination"></div>
@@ -534,7 +542,7 @@
           <div class="col-lg-5">
 
             <div class="info-wrap">
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="200">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="120">
                 <i class="bi bi-geo-alt flex-shrink-0"></i>
                 <div>
                   <h3>Address</h3>
@@ -542,7 +550,7 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="300">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="140">
                 <i class="bi bi-telephone flex-shrink-0"></i>
                 <div>
                   <h3>Call Me</h3>
@@ -550,7 +558,7 @@
                 </div>
               </div><!-- End Info Item -->
 
-              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="400">
+              <div class="info-item d-flex" data-aos="fade-up" data-aos-delay="160">
                 <i class="bi bi-envelope flex-shrink-0"></i>
                 <div>
                   <h3>Email Me</h3>
@@ -563,39 +571,41 @@
           </div>
 
           <div class="col-lg-7">
-            <form action="forms/contact.php" method="post" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
-              <div class="row gy-4">
+            <!-- Remove this hidden field if it exists -->
+<!-- <input type="hidden" name="_redirect" value="https://www.ashimsharma.com.np/#contact"> -->
 
+            <form id="contact-form" action="https://formspree.io/f/xkgrnbpa" method="POST" data-aos="fade-up" data-aos-delay="200">
+              <div class="row gy-4">
                 <div class="col-md-6">
                   <label for="name-field" class="pb-2">Your Name</label>
-                  <input type="text" name="name" id="name-field" class="form-control" required="">
+                  <input type="text" name="name" id="name-field" class="form-control" required>
                 </div>
-
+            
                 <div class="col-md-6">
                   <label for="email-field" class="pb-2">Your Email</label>
-                  <input type="email" class="form-control" name="email" id="email-field" required="">
+                  <input type="email" name="email" id="email-field" class="form-control" required>
                 </div>
-
+            
                 <div class="col-md-12">
                   <label for="subject-field" class="pb-2">Subject</label>
-                  <input type="text" class="form-control" name="subject" id="subject-field" required="">
+                  <input type="text" name="subject" id="subject-field" class="form-control" required>
                 </div>
-
+            
                 <div class="col-md-12">
                   <label for="message-field" class="pb-2">Message</label>
-                  <textarea class="form-control" name="message" rows="10" id="message-field" required=""></textarea>
+                  <textarea name="message" id="message-field" rows="10" class="form-control" required></textarea>
                 </div>
-
+            
                 <div class="col-md-12 text-center">
-                  <div class="loading">Loading</div>
-                  <div class="error-message"></div>
-                  <div class="sent-message">Your message has been sent. Thank you!</div>
-
-                  <button type="submit">Send Message</button>
+                  <div class="loading"style="display: none;">Loading</div>
+                  <div class="sent-message" style="display: none;">✅ Your message has been sent. Thank you!</div>
+                  <div class="error-message" style="display: none;">❌ Something went wrong. Please try again.</div>
+                  <button type="submit" class="styled-submit-btn">Send Message</button>
                 </div>
-
               </div>
             </form>
+            
+            
           </div><!-- End Contact Form -->
 
         </div>
@@ -614,7 +624,7 @@
         <!-- You can delete the links only if you've purchased the pro version. -->
         <!-- Licensing information: https://bootstrapmade.com/license/ -->
         <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
-        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>
+      <!--Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a> Distributed by <a href="https://themewagon.com">ThemeWagon</a>-->
       </div>
     </div>
 
@@ -640,7 +650,73 @@
 
   <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
-
+  <script>
+    const form = document.getElementById('contact-form');
+    const successMsg = form.querySelector('.sent-message');
+    const errorMsg = form.querySelector('.error-message');
+    const submitButton = form.querySelector('button[type="submit"]');
+  
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault(); // Prevent normal form submit
+      successMsg.classList.remove('fade-out', 'hide');
+      errorMsg.classList.remove('fade-out', 'hide');
+      successMsg.style.display = 'none';
+      errorMsg.style.display = 'none';
+      submitButton.style.display = 'inline-block';
+  
+      const formData = new FormData(form);
+  
+      try {
+        const response = await fetch(form.action, {
+          method: "POST",
+          body: formData,
+          headers: {
+            'Accept': 'application/json'
+          }
+        });
+  
+        if (response.ok) {
+          form.reset();
+          successMsg.style.display = 'inline-block';
+          successMsg.classList.add('fade-out');
+          submitButton.style.display = 'none'; // Hide send button
+  
+          setTimeout(() => {
+            successMsg.classList.add('hide');
+          }, 100); // Trigger fade
+          setTimeout(() => {
+            successMsg.style.display = 'none';
+            successMsg.classList.remove('fade-out', 'hide');
+            submitButton.style.display = 'inline-block'; // Show button again
+          }, 5100);
+        } else {
+          errorMsg.style.display = 'inline-block';
+          errorMsg.classList.add('fade-out');
+  
+          setTimeout(() => {
+            errorMsg.classList.add('hide');
+          }, 100);
+          setTimeout(() => {
+            errorMsg.style.display = 'none';
+            errorMsg.classList.remove('fade-out', 'hide');
+          }, 5100);
+        }
+      } catch (error) {
+        errorMsg.style.display = 'inline-block';
+        errorMsg.classList.add('fade-out');
+  
+        setTimeout(() => {
+          errorMsg.classList.add('hide');
+        }, 100);
+        setTimeout(() => {
+          errorMsg.style.display = 'none';
+          errorMsg.classList.remove('fade-out', 'hide');
+        }, 5100);
+      }
+    });
+  </script>
+  
+  
 </body>
 
 </html>
