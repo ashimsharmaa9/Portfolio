@@ -58,7 +58,9 @@
         <li><a href="#about"><i class="bi bi-person navicon"></i> About</a></li>
         <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
         <li><a href="#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+        <li><a href="#resources"><i class="bi bi-journal-bookmark me-2"></i>  Resources</a></li>
         <li><a href="#testimonials"><i class="bi bi-hdd-stack navicon"></i> Highlights</a></li>
+        
        <!-- <li class="dropdown"><a href="#"><i class="bi bi-menu-button navicon"></i> <span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>
           <ul>
             <li><a href="#">Dropdown 1</a></li>
@@ -446,6 +448,113 @@
 
     </section><!-- /Portfolio Section -->
 
+<!-- Resources Section -->
+<section id="resources" class="resources py-5">
+  <div class="container">
+    <div class="section-title">
+      <h2>Resources</h2>
+      <p>Welcome to the resource hub — your one-stop destination for quality learning materials. Here you'll find curated notes, guides, and downloads to help you thrive in your academic journey and professional career. Everything here is free, relevant, and crafted with your success in mind.</p>
+    </div>
+
+    <!-- Nav Tabs -->
+    <ul class="nav nav-tabs justify-content-center mb-4" id="resourceTabs" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="diploma-tab" data-bs-toggle="tab" data-bs-target="#diploma" type="button" role="tab">Diploma Notes</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="bachelors-tab" data-bs-toggle="tab" data-bs-target="#bachelors" type="button" role="tab">Bachelors Notes</button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="books-tab" data-bs-toggle="tab" data-bs-target="#books" type="button" role="tab">Books</button>
+      </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content" id="resourceTabsContent">
+
+      <!-- Diploma Tab Content -->
+      <div class="tab-pane fade " id="diploma" role="tabpanel">
+        <div class="accordion" id="diplomaAccordion">
+          <!-- Semester 1 -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="diplomaSem1Heading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#diplomaSem1" aria-expanded="true">
+                Semester 1
+              </button>
+            </h2>
+            <div id="diplomaSem1" class="accordion-collapse collapse collapse" data-bs-parent="#diplomaAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="your_drive_link/applied_nepali.pdf" target="_blank" 
+                    style="color: #333; text-decoration: none; transition: color 0.3s ease;"
+                    onmouseover="this.style.color='#007bff';" onmouseout="this.style.color='#333';">
+                    Applied Nepali
+             </a></li>
+                  <li><a href="your_drive_link/applied_english.pdf" target="_blank">Applied English</a></li>
+                  <li><a href="your_drive_link/engineering_math1.pdf" target="_blank">Engineering Mathematics I</a></li>
+                  <li><a href="your_drive_link/physics1.pdf" target="_blank">Engineering Physics I</a></li>
+                  <li><a href="your_drive_link/chemistry1.pdf" target="_blank">Engineering Chemistry I</a></li>
+                  <li><a href="your_drive_link/engineering_drawing1.pdf" target="_blank">Engineering Drawing I</a></li>
+                  <li><a href="your_drive_link/computer_application.pdf" target="_blank">Computer Application</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semester 2–6 Placeholder -->
+          <!-- Copy and modify the accordion block above for Semesters 2–6 -->
+
+        </div>
+      </div>
+
+      <!-- Bachelors Tab Content -->
+      <div class="tab-pane fade" id="bachelors" role="tabpanel">
+        <div class="accordion" id="bachelorsAccordion">
+          <!-- Semester 1 Example -->
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="bachelorSem1Heading">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#bachelorSem1" aria-expanded="true">
+                Semester 1
+              </button>
+            </h2>
+            <div id="bachelorSem1" class="accordion-collapse collapse show" data-bs-parent="#bachelorsAccordion">
+              <div class="accordion-body">
+                <ul>
+                  <li><a href="your_drive_link/bachelor_subject1.pdf" target="_blank">Subject Name</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <!-- Semester 2–8 Placeholder -->
+          <!-- Duplicate and modify for each semester -->
+
+        </div>
+      </div>
+
+      <!-- Books Tab Content -->
+      <div class="tab-pane fade" id="books" role="tabpanel">
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <div class="card h-100">
+              <div class="card-body">
+                <h5 class="card-title">Surveying Handbook</h5>
+                <p class="card-text">Comprehensive surveying reference book.</p>
+                <a href="your_drive_link/surveying_book.pdf" class="btn btn-secondary btn-sm" target="_blank">Download</a>
+              </div>
+            </div>
+          </div>
+          <!-- Add more books similarly -->
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Resources Section -->
+
+
+
     <!-- Survey Work Showcase Section -->
     <!-- Testimonials Section -->
     <section id="testimonials" class="testimonials section light-background">
@@ -525,8 +634,6 @@
       </div>
     
     </section><!-- /Survey Work Showcase Section -->
-
-            
 
 
     <!-- Contact Section -->
