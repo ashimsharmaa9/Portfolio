@@ -1387,18 +1387,4 @@ section,
   color: #007bff !important; /* Use !important to ensure it overrides other styles */
 }
 
-.resource-buttons {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px; /* Adds space between buttons */
-  justify-content: center; /* Optional: center align buttons */
-  margin-bottom: 20px;
-  }
-  
-  .resource-buttons a {
-  margin: 0; /* Reset any default margin */
-  padding: 8px 16px;
-  border-radius: 20px;
-  text-align: center;
-  }
   
